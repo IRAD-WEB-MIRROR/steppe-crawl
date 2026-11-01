@@ -329,7 +329,7 @@ function titleScreen() {
   const sv = loadSave(); let name = randomName(); let sp = null;
   const sky = skySVG();
   const head = `<header class="hhead"><div><h1 class="title">Steppe Crawl</h1><p class="hsub">A roguelike set in Irad.</p></div>
-  <nav class="hlinks" aria-label="Pages"><a href="guide.html" target="_blank" rel="noopener">Game guide</a>${window.TILES ? '<a href="ascii.html">Play in ASCII</a>' : '<a href="index.html">Play with tiles</a>'}<a href="scores.html" target="_blank" rel="noopener">All scores</a></nav></header>`;
+  <nav class="hlinks" aria-label="Pages"><a href="guide.html" target="_blank" rel="noopener">Game guide</a>${window.TILES ? '<a href="ascii.html">Play in ASCII</a>' : '<a href="index.html">Play with tiles</a>'}<a href="scores.html" target="_blank" rel="noopener">All scores</a><a href="changes.html" target="_blank" rel="noopener">What's new</a></nav></header>`;
   const step1 = () => {
     ui = { title: 'title' }; ov.hidden = false;
     const canCont = sv && !sv.over;
